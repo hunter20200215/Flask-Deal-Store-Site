@@ -1,0 +1,16 @@
+{% extends "template.html" %}
+
+{% block pageHeader %}
+	<!-- special to this page header -->
+{% endblock %}
+{% block pageContent %}
+
+	<!-- special to this page content -->
+	{% for per in result %} <!--This line is Jinja 2 template engine syntax --> 
+		 {{ per.name }} 
+	{% endfor %}
+	
+{% endblock %}
+{% block pageFooter %}
+	<!-- special to this page footer -->
+{% endblock %}
